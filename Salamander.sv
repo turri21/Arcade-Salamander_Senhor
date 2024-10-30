@@ -174,16 +174,16 @@ module emu
 
 ///////// Default values for ports not used in this core /////////
 
-assign ADC_BUS  = 'Z;
-assign USER_OUT = '1;
-assign {UART_RTS, UART_TXD, UART_DTR} = 0;
-assign {SD_SCK, SD_MOSI, SD_CS} = 'Z;
-assign {SDRAM_DQ, SDRAM_A, SDRAM_BA, SDRAM_CLK, SDRAM_CKE, SDRAM_DQML, SDRAM_DQMH, SDRAM_nWE, SDRAM_nCAS, SDRAM_nRAS, SDRAM_nCS} = 'Z;
-assign {DDRAM_CLK, DDRAM_BURSTCNT, DDRAM_ADDR, DDRAM_DIN, DDRAM_BE, DDRAM_RD, DDRAM_WE} = '0;  
-
-assign LED_DISK = 0;
-assign LED_POWER = 0;
-assign BUTTONS = 0;
+//assign ADC_BUS  = 'Z;
+//assign USER_OUT = '1;
+//assign {UART_RTS, UART_TXD, UART_DTR} = 0;
+//assign {SD_SCK, SD_MOSI, SD_CS} = 'Z;
+//assign {SDRAM_DQ, SDRAM_A, SDRAM_BA, SDRAM_CLK, SDRAM_CKE, SDRAM_DQML, SDRAM_DQMH, SDRAM_nWE, SDRAM_nCAS, SDRAM_nRAS, SDRAM_nCS} = 'Z;
+//assign {DDRAM_CLK, DDRAM_BURSTCNT, DDRAM_ADDR, DDRAM_DIN, DDRAM_BE, DDRAM_RD, DDRAM_WE} = '0;  
+//
+//assign LED_DISK = 0;
+//assign LED_POWER = 0;
+//assign BUTTONS = 0;
 
 
 
@@ -337,14 +337,14 @@ Salamander_emu gameboard_top (
 
     .sdram_dq                   (SDRAM_DQ                   ),
     .sdram_a                    (SDRAM_A                    ),
-    .sdram_dqml                 (SDRAM_DQML                 ),
-    .sdram_dqmh                 (SDRAM_DQMH                 ),
+//    .sdram_dqml                 (SDRAM_DQML                 ),
+//    .sdram_dqmh                 (SDRAM_DQMH                 ),
     .sdram_ba                   (SDRAM_BA                   ),
     .sdram_nwe                  (SDRAM_nWE                  ),
     .sdram_ncas                 (SDRAM_nCAS                 ),
     .sdram_nras                 (SDRAM_nRAS                 ),
     .sdram_ncs                  (SDRAM_nCS                  ),
-    .sdram_cke                  (SDRAM_CKE                  ),
+//    .sdram_cke                  (SDRAM_CKE                  ),
 
     .debug                      (LED_USER                   )
 );
