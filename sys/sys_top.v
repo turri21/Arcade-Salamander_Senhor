@@ -74,7 +74,7 @@ module sys_top
 //	output  [5:0] VGA_B,
 //	inout         VGA_HS,
 //	output		  VGA_VS,
-//	input         VGA_EN,  // active low
+	input         VGA_EN,  // active low
 
 	/////////// AUDIO //////////
 //	output		  AUDIO_L,
@@ -144,7 +144,7 @@ wire BTN_RESET = 1'b1, BTN_OSD = 1'b1, BTN_USER = 1'b1;
 /////////////////////////////////////////////////////////////////////////
 
 //////////////////////  Secondary SD  ///////////////////////////////////
-wire SD_CS, SD_CLK, SD_MOSI, SD_MISO, SD_CD;
+//wire SD_CS, SD_CLK, SD_MOSI, SD_MISO, SD_CD;
 //
 //`ifndef MISTER_DUAL_SDRAM
 //	assign SD_CD       = mcp_en ? mcp_sdcd : SDCD_SPDIF;
